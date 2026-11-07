@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE STUDIO | Fundas para tu estilo</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="announcement">
+        ENVÍOS A TODO COLOMBIA · DESCUBRE TU ESTILO
+    </div>
+
+    <header class="header">
+        <a href="#inicio" class="logo">CASE<span>STUDIO.</span></a>
+
+        <nav class="navigation">
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+        </nav>
+
+        <button class="cart-button" id="openCart">
+            <span>Bolsa</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+                <span class="eyebrow">TU CELULAR, TU ESTILO</span>
+
+                <h1>Protege lo que<br>te representa.</h1>
+
+                <p>
+                    Fundas diseñadas para acompañar tu personalidad.
+                    Encuentra el diseño perfecto para tu celular.
+                </p>
+
+                <a href="#productos" class="primary-button">
+                    Explorar colección
+                </a>
+
+                <div class="hero-info">
+                    <span>Diseños únicos</span>
+                    <span>Protección y estilo</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="decor-circle"></div>
+
+                <!-- IMAGEN PRINCIPAL -->
+                <img
+                    src="forro1.png"
+                    alt="Funda Flower Power"
+                    class="hero-product hero-product-one"
+                >
+
+                <!-- SEGUNDA IMAGEN -->
+                <img
+                    src="forro2.png"
+                    alt="Funda Less is More"
+                    class="hero-product hero-product-two"
+                >
+
+                <div class="hero-label">
+                    NEW COLLECTION<br>2026
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <section class="categories-section" id="categorias">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">ENCUENTRA TU MODELO</span>
+                    <h2>Compra por categoría</h2>
+                </div>
+
+                <p>Selecciona la marca de tu dispositivo.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card active" data-brand="Apple">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 100 100" role="img" aria-label="Apple">
+                            <path fill="#111" d="M70.8 53.2c.1 14.1 12.4 18.8 12.5 18.9-.1.3-2 6.8-6.5 13.5-3.9 5.8-8 11.5-14.4 11.6-6.3.1-8.3-3.8-15.5-3.8s-9.4 3.7-15.3 3.9c-6.1.2-10.8-6.2-14.7-12C8.9 73.5 2.8 52.3 11 36.6c4.1-7.8 11.5-12.7 19.5-12.8 6.1-.1 11.8 4.1 15.5 4.1s10.6-5.1 17.9-4.4c3.1.1 11.8 1.2 17.4 9.2-.5.3-10.4 6.1-10.5 20.5zM59.1 16.1C62.4 12.2 64.7 6.8 64.1 1c-4.8.2-10.6 3.2-14 7.1-3.1 3.5-5.8 9-5.1 14.2 5.3.4 10.7-2.7 14.1-6.2z"/>
+                        </svg>
+                    </span>
+                    <span>Apple</span>
+                </button>
+
+                <button class="category-card" data-brand="Samsung">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 180 60" role="img" aria-label="Samsung">
+                            <text x="90" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="900" letter-spacing="-1.8" fill="#1428a0">SAMSUNG</text>
+                        </svg>
+                    </span>
+                    <span>Samsung</span>
+                </button>
+
+                <button class="category-card" data-brand="Xiaomi">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 100 100" role="img" aria-label="Xiaomi">
+                            <rect x="8" y="8" width="84" height="84" rx="18" fill="#ff6900"/>
+                            <path fill="#fff" d="M25 31h10v38H25zm18 0h20c10 0 15 5 15 15v23H68V47c0-4-2-6-6-6H53v28H43z"/>
+                        </svg>
+                    </span>
+                    <span>Xiaomi</span>
+                </button>
+
+                <button class="category-card" data-brand="Motorola">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 100 100" role="img" aria-label="Motorola">
+                            <circle cx="50" cy="50" r="44" fill="#fff" stroke="#111" stroke-width="6"/>
+                            <path fill="#111" d="M23 70V31h14l13 18 13-18h14v39H64V47L50 65 36 47v23z"/>
+                        </svg>
+                    </span>
+                    <span>Motorola</span>
+                </button>
+
+                <button class="category-card" data-brand="Honor">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 180 60" role="img" aria-label="Honor">
+                            <text x="90" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="43" font-weight="700" letter-spacing="-2" fill="#111">HONOR</text>
+                        </svg>
+                    </span>
+                    <span>Honor</span>
+                </button>
+
+            </div>
+
+            <div class="model-selector">
+                <label for="modelFilter">Selecciona tu modelo:</label>
+
+                <select id="modelFilter">
+                    <option value="all">Todos los modelos</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products-section" id="productos">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">NUESTRA COLECCIÓN</span>
+                    <h2>Encuentra tu favorita.</h2>
+                </div>
+            </div>
+
+            <div class="products-toolbar">
+
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar una funda..."
+                    >
+                </div>
+
+                <select id="sortFilter">
+                    <option value="default">Ordenar por</option>
+                    <option value="low">Menor precio</option>
+                    <option value="high">Mayor precio</option>
+                    <option value="name">Nombre</option>
+                </select>
+
+            </div>
+
+            <div class="active-filters" id="activeFilters">
+                Mostrando todos los productos
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <h3>No encontramos productos</h3>
+                <p>Prueba con otro modelo o término de búsqueda.</p>
+            </div>
+
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about-section" id="nosotros">
+
+            <div class="about-content">
+                <span class="eyebrow">MÁS QUE UNA FUNDA</span>
+
+                <h2>Tu celular también habla de ti.</h2>
+
+                <p>
+                    En CASE STUDIO creemos que los pequeños detalles
+                    hacen la diferencia. Por eso reunimos diseños,
+                    colores y estilos para que encuentres una funda
+                    que vaya contigo.
+                </p>
+
+                <a href="#productos" class="secondary-button">
+                    Descubrir productos
+                </a>
+            </div>
+
+            <!-- IMAGEN CORREGIDA -->
+            <div class="about-image">
+                <img
+                    src="case_studio_banner.png"
+                    alt="Colección de fundas CASE STUDIO"
+                >
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <a href="#inicio" class="logo">CASE<span>STUDIO.</span></a>
+            <p>Protección con personalidad.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Explora</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#productos">Productos</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Atención</h4>
+            <a href="#nosotros">Sobre nosotros</a>
+            <a href="#productos">Nuestra colección</a>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 CASE STUDIO. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- FONDO OSCURO -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- BOLSA -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+            <div>
+                <span class="eyebrow">CASE STUDIO</span>
+                <h2>Tu bolsa</h2>
+            </div>
+
+            <button id="closeCart" class="close-button" aria-label="Cerrar bolsa">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Continuar con la compra
+            </button>
+
+            <p>El envío se cotiza por separado.</p>
+        </div>
+
+    </aside>
+
+    <!-- MODAL DETALLE PRODUCTO -->
+    <div class="modal-overlay" id="productModal">
+
+        <div class="product-modal">
+            <button class="close-button modal-close" id="closeModal">×</button>
+            <div id="modalContent"></div>
+        </div>
+
+    </div>
+
+    <!-- MODAL COMPRA -->
+    <div class="modal-overlay" id="checkoutModal">
+
+        <div class="checkout-modal">
+
+            <button class="close-button checkout-close" id="closeCheckout">×</button>
+
+            <div id="checkoutContent">
+
+                <div class="checkout-heading">
+                    <span class="eyebrow">CASE STUDIO</span>
+                    <h2>Finaliza tu compra.</h2>
+                    <p>Completa tus datos para registrar tu pedido.</p>
+                </div>
+
+                <form id="checkoutForm">
+
+                    <h3>Datos personales</h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full">
+                            <label for="customerName">Nombre completo</label>
+                            <input type="text" id="customerName" placeholder="Escribe tu nombre" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerEmail">Correo electrónico</label>
+                            <input type="email" id="customerEmail" placeholder="correo@ejemplo.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerPhone">Teléfono</label>
+                            <input type="tel" id="customerPhone" placeholder="Tu número de contacto" autocomplete="tel" required>
+                        </div>
+
+                    </div>
+
+                    <h3>Dirección de entrega</h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="customerDepartment">Departamento</label>
+                            <input type="text" id="customerDepartment" placeholder="Ej. Atlántico" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerCity">Ciudad</label>
+                            <input type="text" id="customerCity" placeholder="Ej. Barranquilla" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="customerAddress">Dirección completa</label>
+                            <input type="text" id="customerAddress" placeholder="Calle, carrera, número, apartamento..." required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="customerNotes">Indicaciones adicionales</label>
+                            <textarea id="customerNotes" placeholder="Referencias para encontrar tu dirección (opcional)" rows="3"></textarea>
+                        </div>
+
+                    </div>
+
+                    <h3>Método de pago</h3>
+
+                    <div class="payment-options">
+
+                        <!-- EFECTIVO -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Efectivo contraentrega" required>
+
+                            <span class="payment-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M6 9h.01M18 15h.01"></path>
+                                </svg>
+                            </span>
+
+                            <span class="payment-text">
+                                <strong>Efectivo</strong>
+                                <small>Pago contraentrega, sujeto a cobertura.</small>
+                            </span>
+                        </label>
+
+                        <!-- TARJETA -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Tarjeta débito o crédito">
+
+                            <span class="payment-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                                    <path d="M2 10h20M6 15h4"></path>
+                                </svg>
+                            </span>
+
+                            <span class="payment-text">
+                                <strong>Tarjeta</strong>
+                                <small>Débito o crédito.</small>
+                            </span>
+                        </label>
+
+                        <!-- NEQUI -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Nequi">
+
+                            <span class="payment-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+                                    <path d="M10 6h4M11 18h2"></path>
+                                </svg>
+                            </span>
+
+                            <span class="payment-text">
+                                <strong>Nequi</strong>
+                                <small>Pago mediante transferencia.</small>
+                            </span>
+                        </label>
+
+                        <!-- DAVIPLATA -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Daviplata">
+
+                            <span class="payment-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+                                    <path d="M10 6h4M11 18h2"></path>
+                                </svg>
+                            </span>
+
+                            <span class="payment-text">
+                                <strong>Daviplata</strong>
+                                <small>Pago mediante transferencia.</small>
+                            </span>
+                        </label>
+
+                        <!-- TRANSFERENCIA BANCARIA -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Transferencia bancaria">
+
+                            <span class="payment-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 9h18L12 3 3 9Z"></path>
+                                    <path d="M5 10v8M9 10v8M15 10v8M19 10v8M3 21h18M2 18h20"></path>
+                                </svg>
+                            </span>
+
+                            <span class="payment-text">
+                                <strong>Transferencia bancaria</strong>
+                                <small>Se coordinarán los datos de pago.</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <!-- FORMULARIO DE TARJETA: SOLO DEMOSTRACIÓN -->
+                    <section class="demo-card-fields" id="demoCardFields" hidden aria-label="Datos de tarjeta para demostración">
+
+                        <div class="demo-card-heading">
+                            <div>
+                                <strong>Datos de tarjeta</strong>
+                                <small>Simulación de pago · No se realizará ningún cobro</small>
+                            </div>
+                            <span class="demo-card-chip">DEMO</span>
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group full">
+                                <label for="demoCardNumber">Número de tarjeta</label>
+                                <input type="text" id="demoCardNumber" inputmode="numeric" autocomplete="off" maxlength="23" placeholder="0000 0000 0000 0000" pattern="[0-9 ]{13,23}" title="Escribe un número ficticio de 13 a 19 dígitos." disabled>
+                            </div>
+
+                            <div class="form-group full">
+                                <label for="demoCardName">Nombre del titular</label>
+                                <input type="text" id="demoCardName" autocomplete="off" maxlength="60" placeholder="NOMBRE DE PRUEBA" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demoCardExpiry">Vencimiento</label>
+                                <input type="text" id="demoCardExpiry" inputmode="numeric" autocomplete="off" maxlength="5" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])/[0-9]{2}" title="Usa el formato MM/AA." disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demoCardCvv">CVV ficticio</label>
+                                <input type="password" id="demoCardCvv" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="123" pattern="[0-9]{3,4}" title="Escribe 3 o 4 dígitos ficticios." disabled>
+                            </div>
+
+                        </div>
+
+                        <p class="demo-card-warning">
+                            ⚠️ No ingreses datos de una tarjeta real. Estos campos son únicamente visuales para presentar el flujo de compra del proyecto.
+                        </p>
+
+                    </section>
+
+                    <div class="payment-notice" id="paymentNotice">
+                        Selecciona un método de pago para continuar.
+                    </div>
+
+                    <div class="checkout-summary">
+
+                        <div>
+                            <span>Subtotal</span>
+                            <strong id="checkoutSubtotal">$0</strong>
+                        </div>
+
+                        <div>
+                            <span>Envío</span>
+                            <strong>Por cotizar</strong>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total de productos</span>
+                            <strong id="checkoutTotal">$0</strong>
+                        </div>
+
+                    </div>
+
+                    <p class="checkout-disclaimer">
+                        El valor del envío se confirmará según tu ubicación.
+                        Los pagos electrónicos requieren verificación.
+                    </p>
+
+                    <button type="submit" class="checkout-button">
+                        Confirmar pedido
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- CONFIRMACIÓN -->
+            <div class="success-screen" id="successScreen" hidden>
+
+                <div class="success-icon">✓</div>
+
+                <span class="eyebrow">CASE STUDIO</span>
+
+                <h2>¡Pedido registrado!</h2>
+
+                <p>
+                    Tu pedido ha sido registrado correctamente.
+                    Gracias por elegir CASE STUDIO.
+                </p>
+
+                <div class="order-number">
+                    <span>Número de pedido</span>
+                    <strong id="orderNumber"></strong>
+                </div>
+
+                <div class="success-details" id="successDetails"></div>
+
+                <button class="primary-button" id="finishPurchase">
+                    Volver a la tienda
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BURBUJA FLOTANTE DE WHATSAPP -->
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/573XXXXXXXXX?text=Hola%2C%20tengo%20una%20consulta%20sobre%20CASE%20STUDIO"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escríbenos por WhatsApp"
+        title="Escríbenos por WhatsApp"
+    >
+        <span class="whatsapp-tooltip">¿Tienes dudas? Escríbenos</span>
+
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16.02 3C8.85 3 3.02 8.78 3.02 15.9c0 2.28.6 4.5 1.74 6.45L3 29l6.84-1.78a13.1 13.1 0 0 0 6.18 1.55h.01c7.17 0 13-5.78 13-12.9C29.03 8.75 23.2 3 16.02 3Zm0 23.55c-1.9 0-3.76-.5-5.38-1.46l-.39-.23-4.06 1.06 1.08-3.95-.25-.4a10.7 10.7 0 0 1-1.64-5.67c0-5.88 4.82-10.66 10.65-10.66 5.87 0 10.65 4.78 10.65 10.66 0 5.88-4.78 10.65-10.66 10.65Zm5.85-7.98c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.84-1.59-1.88-1.78-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.7s1.17 3.13 1.33 3.35c.16.21 2.3 3.5 5.57 4.9.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.1 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.14-.3-.22-.62-.38Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
